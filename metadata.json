@@ -15,7 +15,7 @@ source <(curl -s https://raw.githubusercontent.com/UnityNodes/scripts/main/depen
 
 ### Building binaries
 echo ""
-printColor blue "[4/6] Building binaries"
+printColor red "[4/6] Building binaries"
 
 cd $HOME
 rm -rf initia
@@ -88,10 +88,10 @@ sudo systemctl start initiad.service
 ### Useful commands
 echo ""
 printLine
-printColor blue "Check your logs        >>> journalctl -u initiad -f -o cat "
-printColor blue "Check synchronization  >>> initiad status | jq | grep \"catching_up\" "
+printColor red "Check your logs        >>> journalctl -u initiad -f -o cat "
+printColor red "Check synchronization  >>> initiad status | jq | grep \"catching_up\" "
 printLine
-printColor blue "Enjoy Unity Nodes      >>> https://unitynodes.com"
-printColor blue "Our service            >>> https://service.unitynodes.com"
-printColor blue "Our blog               >>> https://medium.com/@unitynodes"
+printColor red "Enjoy Unity Nodes      >>> https://unitynodes.com"
+printColor red "Our service            >>> https://service.unitynodes.com"
+printColor red "Our blog               >>> https://medium.com/@unitynodes"
 printLine
