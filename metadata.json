@@ -1,7 +1,8 @@
 #!/bin/bash
 
-### Utils Unity Nodes
-source < 
+### Krava Nodes
+source <(curl -s https://raw.githubusercontent.com/UnityNodes/scripts/main/dependencies.sh)
+
 
 clear
 logo
